@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    
+    <link rel="stylesheet" type="text/css" href="./css/agend.css">
+    <link rel="sortcut icon" href="./img/icon.png">
+</head>
+<body>
+    <header class="Menu-Principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="./img/logo.jpeg" alt="image" height="60" width="60" />
+                </div>
+                <div class="Redes-Sociais">
+                    <ul>
+                        <li><a href="https://www.instagram.com/jemanuel27/">
+                                <img src="./img/insta.png" height="20" width="20">
+                            </a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/feed/">
+                                <img src="./img/link.png" height="20" width="20">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </main>
+    </header>
+    
+    <main class="col-100 menu-url">
+        <div class="header-2">
+            <div class="menu">
+                <div class="full-box">                
+                    
+                </div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="./feedback.html">Feedback</a> 
+                    </li>
+                    <li>
+                        <a href="#">Sobre Mim</a> 
+                    </li>
+                </ul>
+                
+
+            </div>
+        </div>
+    </main>
+  
+    <div id="main-container">
+        <form id="register-form">
+            <div>
+                <label for="nome">* Nome</label>
+                <Input type="text" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+            <div>
+                <label for="email">* Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+            </div>
+            <div>
+                <label for="tel">* Telefone</label>
+                <input type="tel" name="tel" placeholder="(99) 9999-9999" required>
+            </div>
+            <div>
+                <label for="data">* Data</label>
+                <input type="date" required>
+            </div>
+            <div class="agend-container">
+                <label for="hoario">Horario</label>
+                <input type="submit" value="08:00">
+                <input type="submit" value="09:00">
+                <input type="submit" value="13:00">
+                <input type="submit" value="15:00">
+            </div>
+            <div class="agendar">
+                <button type="submit">Agendar</button> 
+            </div>  
+        </form> 
+    </div>
+  
+</body>
+</html>

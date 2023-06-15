@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Comentários</title>
+</head>
+<body>
+    <h1>Comentários</h1>
+    
+    <form id="comment-form">
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="comment">Comentário:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" maxlength="150"></textarea><br>
+        <span id="char-count">150 caracteres restantes</span><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <div id="comments">
+        <!-- Os comentários serão exibidos aqui -->
+    </div>
+    
+    <script>
+        document.getElementById("comment-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            
+            // Obtém os valores dos campos do formulário
+            var name = document.getElementById("name").value;
+            var comment = document.getElementById("comment").value;
+            
+            // Verifica se o comentário excede o limite de 150 caracteres
+            if (comment.length > 150) {
+                alert("O comentário não pode exceder 150 caracteres!");
+                return;
+            }
+            
+            // Cria um novo elemento para exibir o comentário
+            var newComment = document.createElement("div");
+            newComment.innerHTML = "<h3>" + name + "</h3><p>" + comment + "</p>";
+            
+            // Adiciona o novo comentário à seção de comentários
+            document.getElementById("comments").appendChild(newComment);
+            
+            // Limpa os campos do formulário
+            document.getElementById("name").value = "";
+            document.getElementById("comment").value = "";
+            
+            // Atualiza a contagem de caracteres restantes
+            updateCharCount();
+        });
+        
+        // Atualiza a contagem de caracteres restantes ao digitar no campo de comentário
+        document.getElementById("comment").addEventListener("input", updateCharCount);
+        
+        function updateCharCount() {
+            var comment = document.getElementById("comment").value;
+            var remainingChars = 150 - comment.length;
+            
+            var charCountElement = document.getElementById("char-count");
+            charCountElement.textContent = remainingChars + " caracteres restantes";
+        }
+    </script>
+</body>
+</html>

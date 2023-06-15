@@ -1,0 +1,131 @@
+/*Menu*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+input, label{
+    display: block;
+    width: 100%;
+}
+
+
+ul{
+    padding: 0px!important;
+}
+
+.Menu-Principal {
+    width: 100%;
+    background-color: black;
+    height: 60px;
+}
+
+main{
+   margin: 0 auto;
+   width: 980px;
+   position: relative; 
+}
+
+.logo{
+
+    float: left;
+    width: 70%;
+}
+
+.Redes-Sociais ul li{
+    margin-left: 15px;
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+
+.Redes-Sociais{
+    width: 25%;
+    float: right;
+}
+.header-2{
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+    
+}
+.menu-url{
+    height: 70px;
+    border-bottom: 3px solid #efefef;
+}
+
+.menu{
+    width: 85%;
+    float: center;
+        
+}
+
+.menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 15px;
+    
+}
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    float: left;
+}
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+/*Formulario*/
+
+
+
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+
+.agendar button[type="submit"]{
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    width: 450px;
+}
+
+.agend-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]{
+    margin: 20px;
+}
+
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+}
